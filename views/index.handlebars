@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- NOTES
+X combine membership and projects into a 'how to get involved' section
+- add links to all pages into the footer, everything is accessible from there 
+- total list of pages; club overview, news and awards, officers, projects, maybe a hackathon page, ...
+- Need info on workshops -->
+<html>
+	
+	<header>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/row_col_container.css">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+		<script type="text/javascript" src="js/site.js"></script>
+		<script src="js/smooth-scroll-master/dist/js/smooth-scroll.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</header>
+	
+	<body>
+		
+		<!-- NAVBAR -->
+		<div class="navbar">
+			<div class="container">
+				<a class="navbar_logo" href="#landing">tritonXR</a>
+				<div class="navbar_links">
+					<ul class="navbar_list">
+						<li class="navbar_link"><a href="#about">ABOUT</a></li>
+						<li class="navbar_link"><a href="#membership">MEMBERSHIP</a></li>
+						<li class="navbar_link"><a href="#schedule">SCHEDULE</a></li>
+						<li class="navbar_link"><a href="#hackathon">HACKATHON</a></li>
+						<li class="navbar_link"><a href="#sponsors">SPONSORS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- LANDING -->
+		<div class="landing" id="landing">
+			<div class="background_container">
+				<div class="slide center">
+					<img class="foreground" src="images/banner_1.jpg">
+					<img class="background" src="">
+					<div class="slide-text">Some Text</div>
+				</div>
+				<div class="slide right">
+					<img class="foreground" src="images/banner_2.jpg">
+					<img class="background" src="">
+					<div class="slide-text">Some Text</div>
+				</div>
+				<div class="slide left">
+					<img class="foreground" src="images/banner_3.jpg">
+					<img class="background" src="">
+					<div class="slide-text">Some Text</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="logo"><h2>Triton XR</h2><h5>XR HERE 4 U?</h5><h5 class="note">This will have the logo with a background of images carouseling.</h5></div><br>
+				<div class="dot-container center">
+				  <span class="dot active" onclick="setSlide(0)"></span> 
+				  <span class="dot" onclick="setSlide(1)"></span> 
+				  <span class="dot" onclick="setSlide(2)"></span> 
+				</div>
+			</div>
+		</div>
+
+		<!-- ABOUT -->
+		<div class="section" id="about">
+			<div class="block container">
+				<h1 class="center">Our Mission</h1>
+				<div class="row">
+					<div class="col s12 l8 offset-l2">
+						<div class="row">
+							<div class="col s4 l4">
+								<div class="motto-container">
+									<h1 class="motto center">Build.</h1>
+									<object class="motto-img" type="image/svg+xml" data="images/svg/placeholder_1x2.svg">Your browser does not support SVGs</object>
+								</div>
+							</div>
+							<div class="col s4 l4">
+								<div class="motto-container">
+									<h1 class="motto center">Learn.</h1>
+									<object class="motto-img" type="image/svg+xml" data="images/svg/placeholder_1x2.svg">Your browser does not support SVGs</object>
+								</div>
+							</div>
+							<div class="col s4 l4">
+								<div class="motto-container">
+									<h1 class="motto center">Explore.</h1>
+									<object class="motto-img" type="image/svg+xml" data="images/svg/placeholder_1x2.svg">Your browser does not support SVGs</object>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col s12">
+						<h3 class="center">TritonXR is a student organization at UC San Diego that connects members with the VR and AR industry through workshops, projects, and networking. Our mission is to foster a multidisciplinary community dedicated to exploring and creating Virtual and Augmented Reality experiences.</h3>
+					</div>
+					<div class="col m12 l6 offset-l3">
+						<button><a href="about">Learn More</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- MEMBERSHIP -->
+		<div class="section row" id="membership">
+			<div class="col s12">
+				<div class="block container">
+					<h1 class="center">Membership</h1>
+					<div class="row">
+						<div class="col m4">
+							<div class="member-card">
+								<h3 class="list-header center">General Membership</h3>
+								<h4>Being a member is free! Sign up for our newsletter, follow us on Facebook, join us at events. Everyone is encouraged to participate.</h4>
+								<div class="button-container">
+									<a href=""><button>Follow us on Facebook</button></a>
+								</div>
+							</div>
+						</div>
+						<div class="col m4">
+							<div class="member-card">
+								<h3 class="list-header center">Officers</h3>
+								<h4>Want to get more involved? Help us build a community for VR / AR technology at UCSD. Officer positions are for undergraduate students looking to help in event planning, leading workshops, graphic design, and more.</h4>
+								<div class="button-container">
+									<a href="officers"><button>See our open positions</button></a>
+								</div>
+							</div>
+						</div>
+						<div class="col m4">
+							<div class="member-card">
+								<h3 class="list-header center">Projects</h3>
+								<h4>In pursuit of a thriving development community at UCSD in order to learn skills that'll take students into industry, we host a VR Lab and facilitate year-long projects ranging from beginner to advanced developers.</h4>
+								<div class="button-container">
+									<a href="projects"><button>Learn about projects</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m12 l6 offset-l3">
+							<a href="http://ucsd.us14.list-manage.com/subscribe?u=3bd4ec4d4ff1a00608e87e1b0&id=eff048ff24"><button>Sign up for our newsletter</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SCHEDULE -->
+		<div class="section row" id="schedule">
+			<div class="col s12">
+				<div class="block container">
+					<h1 class="center">Schedule</h1>
+					<h5 class="note">Alternative to a calendar, tentative quarter by quarter shcedule</h5>
+					<h3 class="center">We host a variety of events throughout the year.</h3>
+					<div class="row">
+						<div class="col s4">
+							<div class="calendar-card">
+								<h3 class="list-header center">Fall</h3>
+								<ul>
+									<li>Fall GBM</li>
+									<li>SD Hacks - VR Space</li>
+									<li>VR Demos - Industry Showcase</li>
+									<li>Projects Begin</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col s4">
+							<div class="calendar-card">
+								<h3 class="list-header center">Winter</h3>
+								<ul>
+									<li>Winter GBM</li>
+									<li>HackXR - VR/AR Hackathon</li>
+									<li>VR Demos - Project Showcase</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col s4">
+							<div class="calendar-card">
+								<h3 class="list-header center">Spring</h3>
+								<ul>
+									<li>Spring GBM</li>
+									<li>HackXX - VR Space</li>
+									<li>VR Demos - Industry Showcase</li>
+									<li>VR Demos - Student Showcase</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- HACKATHON -->
+		<div class="section" id="hackathon">
+			<div class="block container">
+				<div class="row">
+					<div class="col s12">
+						<h1 class="center">HackXR</h1>
+						<h3 class="center">UCSD's first ever VR/AR hackathon, hosted by the Virtual Reality Club.</h3>
+						<div class="hackathon-container">
+							<object class="hackathon-img" type="image/svg+xml" data="images/svg/placeholder.svg">Your browser does not support SVGs</object>
+						</div>
+					</div>
+					<div class="col m12 l6">
+						<a href=""><button>HackXR Site</button></a>
+					</div>
+					<div class="col m12 l6">
+						<a href=""><button>Submissions</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SPONSORSHIP -->
+		<div class="section" id="sponsors">
+			<div class="block container">
+				<div class="row">
+					<div class="col s12">
+						<h1 class="center">Sponsors</h1>
+						<h3 class="center">Sponsors, duh</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m12 l6 offset-l3 inline">
+						<h3>Want to support the VR Club?</h3>
+						<a href="mailto:ucsdvr@ucsd.edu"><button>Contact Us!</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="block container">
+				<div class="row">
+					<div class="col s7 offset-s1">
+						<h3>Links</h3>
+						<div class="row">
+							<div class="col m6">
+								<a href="about"><h4>About</h4></a>
+								<a href="news"><h4>News and Awards</h4></a>
+								<a href="officers"><h4>Officers</h4></a>
+								<a href="projects"><h4>Projects</h4></a>
+								<a href="hackathon"><h4>HackXR</h4></a>
+							</div>
+							<div class="col m6">
+								<a href="https://www.facebook.com/ucsdvr/?ref=aymt_homepage_panel" target="_blank"><h4>Facebook</h4></a>
+								<a href=""><h4>LinkedIn</h4></a>
+								<a href=""><h4>Steam</h4></a>
+								<a href=""><h4>Any other external link</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "samplesite",
+  "version": "1.0.0",
+  "description": "a test site to try node and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "greg morgan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

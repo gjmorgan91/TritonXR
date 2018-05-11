@@ -1,0 +1,520 @@
+/*
+Authors: Greg Morgan
+Last Edits: 4/23/18
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:100,400,500');
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+:root {
+  --club-red: rgba(213,61,59,1.0);
+  --club-blue: rgba(79,195,203,1.0);
+  --black: rgba(10,10,13,1.0);
+  --black-hover: rgba(30,30,33,1.0);
+}
+
+html {
+
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	line-height: 1.8rem;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Roboto';
+	font-weight: 100;
+	font-size: 40;
+	color: var(--black);
+}
+
+h3 {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 20;
+	color: var(--black);
+}
+
+h4, li, .navbar_logo {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: var(--black);
+	font-size: 14;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: var(--black);
+	font-size: 14;
+}
+
+button {
+	width: 100%;
+	cursor: pointer;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	font-size: 12;
+
+}
+
+button:hover {
+	background-color: darkgrey;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: var(--black);
+	cursor: pointer;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.inline {
+	display: inline-flex;
+}
+
+.note {
+	opacity: 0.5;
+	padding: 0;
+	margin: 0;
+}
+
+.bold {
+	font-style: bold;
+	font-weight: 600;
+}
+
+.container {
+	margin: auto;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+	-webkit-box-align: center;
+	justify-content: space-between;
+	-webkit-box-pack: justify;
+	width: 960px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+	padding-top: 5rem !important;
+}
+
+.block {
+	display: block !important;
+}
+
+/* NAVBAR */
+
+.navbar {
+	background-color: white;
+}
+
+.navbar {
+	padding: 10px 15px;
+	position: fixed;
+	top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar_logo {
+	text-decoration: none;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	/*display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;*/
+}
+
+.navbar_logo:hover {
+	color: grey;
+}
+
+.navbar ul {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar li a{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar_links {
+	display: inline-flex;
+	text-align: right;
+	flex-basis: auto;
+	flex-grow: 1;
+	-webkit-box-flex: 1;
+	align-items: center;
+	-webkit-box-align: center;
+}
+
+.navbar_list {
+	display: flex;
+	flex-direction: row;
+	display: inline-flex;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+	list-style-position: outside;
+	margin-left: auto !important;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.navbar_link a {
+	margin: 5px;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+
+.navbar_link:hover a {
+	color: grey;
+}
+
+/* LANDING */
+
+.landing {
+    min-height: 600px;
+    max-height: 600px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background-position: right bottom;
+    background-color: darkgrey;
+    color: white;
+    overflow: hidden;
+}
+
+.landing .container {
+	height: 100%;
+	display: flow-root;
+	z-index: 1000;
+	position: relative;
+}
+
+.logo {
+	color: white;
+	text-align: center;
+	margin: auto;
+	display: inline;
+}
+
+.background_container {
+	height: 100%;
+	width: 100%;
+	position: initial;
+	overflow: hidden;
+	display: inline;
+	z-index: 1000;
+}
+
+.slide {
+	position: absolute;
+	display: inline;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	width: 100%;
+	height: 100%;
+}
+
+.foreground {
+	width: 100%;
+	height: auto;
+	min-width: 960px;
+}
+
+.background {
+	width: 100%;
+	height: auto;
+	min-width: 960px;
+}
+
+.center {
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.right {
+	top: 0;
+	left: 100%;
+	z-index: -100;
+}
+
+.left {
+	top: 0;
+	left: -100%;
+	z-index: 0;
+}
+
+.dot-container {
+	display: flex;
+    position: relative;
+    top: 64%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* MISSION */
+
+.motto-container {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+}
+
+.motto {
+	position: absolute;
+	top: 90%;
+	left: 0.5rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.motto-img {
+	width: 100%;
+	height: auto;
+}
+
+/* CALENDAR */
+
+.list-header {
+	width: 80%;
+    border-bottom: 1px solid grey;
+}
+
+.calendar-card, .member-card {
+	margin: 0.5rem;
+	border: solid 1px black;
+}
+
+/* MEMBERS */
+
+.button-container {
+	position: absolute;
+	bottom: 1rem;
+	width: 89%;
+	display: flex;
+	justify-content: center;
+}
+
+.member-card {
+	padding: 1rem;
+	min-height: 375px;
+	position: relative;
+}
+
+.button-container a {
+	width: 100%;
+}
+
+/* HACKATHON */
+
+.hackathon-container {
+	border: 4px solid lightgrey;
+	margin: 1.5rem 0;
+}
+
+.hackathon-img {
+	width: 100%;
+	height: 150px;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+	display: block;
+	justify-content: left;
+	background-color: darkgrey;
+	color: white;
+	padding: 10px 15px;
+}
+
+.footer .row {
+	margin-bottom: 0;
+}
+
+.footer a {
+	width: fit-content;
+}
+
+.footer h4 {
+	line-height: 1rem;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	border-bottom: 1px dashed rgba(120,120,120,0.0);
+	width: fit-content;
+}
+
+.footer h4:hover {
+	color: grey;
+	border-bottom: 1px dashed rgba(120,120,120,1.0);
+}
+
+/* ---------- OTHER PAGES ---------- */
+
+.return-container {
+	position: static;
+	top: 5px;
+	left: 5px;
+}
+
+.banner h1 {
+	font-size: 80;
+	font-weight: 300;
+}
+
+.banner {
+	min-height: 300px;
+	max-height: 300px;
+	width: 100%;
+	background-color: grey;
+}
+
+.banner .container {
+	position: relative;
+	top: 205;
+}
+
+.banner-background {
+
+}
+
+.banner-header {
+	color: white;
+}
+
+.content-container {
+	margin: 5rem 0;
+}
+
+.content-container .container {
+	display: block;
+}
+
+.scrollspy-container {
+	position: absolute;
+	right: 5rem;
+	top: 28rem;
+	height: 430%;
+}
+
+.scrollspy {
+	position: sticky;
+	top: 2rem;
+}
+
+.scrollspy ul {
+	list-style-type: none;
+}
+
+.scrollspy li {
+	padding: 0.1rem 0.5rem;
+	border-radius: 0.1rem;
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.scrollspy li:hover {
+	background-color: lightgrey;
+}
+
+/* OFFICERS PAGE */
+
+.officer-card {
+	height: fit-content;
+	padding: 1rem;
+}
+
+.officer-card.president {
+	margin-right: 3rem;
+}
+
+.officer-heading {
+	padding-top: 2rem;
+}
+
+.officer-card.chair {
+
+}
+
+.officer-card.officer {
+
+}
+
+.officer-content {
+
+}
+
+.officer-img {
+	width: 100%;
+	height: auto;
+	border-radius: 20rem;
+}
+
+/* PROJECTS */
+
+.project-card {
+	border: 1px solid grey;
+	overflow: hidden;
+	height: 20rem;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+
+.project-card:hover {
+	height: 30rem;
+}
+
+.project-content {
+
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+}
+
+.project-text {
+	padding: 1rem;
+}

@@ -1,0 +1,125 @@
+<html>
+	<header>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/row_col_container.css">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+		<script type="text/javascript" src="js/site.js"></script>
+		<script src="js/smooth-scroll-master/dist/js/smooth-scroll.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</header>
+
+	<body>
+
+		<div class="banner" id="top">
+			<div class="banner-background"></div>
+			<div class="container">
+				<div class="banner-header">
+					<h1>OFFICERS</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-container">
+
+			<div class="scrollspy-container">
+			    <nav class="scrollspy">
+			    	<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+			        	<li><a data-scroll href="#section1">Executive</a></li>
+			        	<li><a data-scroll href="#section2">Events</a></li>
+			        	<li><a data-scroll href="#section3">Public Relations</a></li>
+			        	<li><a data-scroll href="#section4">Branding</a></li>
+			        	<li><a data-scroll href="#section4">Projects</a></li>
+			        	</li>
+			    	</ul>
+			    </nav>
+			</div>
+
+			<div class="container">
+
+				<h1>Our Team</h1>
+				<h3 class="officer-heading">Executive Committee</h3>
+
+				<div class="row">
+					<div class="col s12 l11 offset-l1">
+
+						<div class="row presidents" id="section1">
+							{{#each presidents}}
+							<div class="col s12 l5">
+								<div class="officer-card president">
+									<div class="officer-content">
+										<object class="officer-img" type="image/svg+xml" data="{{img}}">Your browser does not support SVGs</object>
+										<h4 class="bold">{{title}}</h4>
+										<h4>{{name}}</h4>
+										<h4>{{major}}</h4>
+										<h4>{{description}}</h4>
+										<a href="mailto:{{email}}"><button>Contact: {{email}}</button></a>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+
+						</div>
+					</div>
+				</div>
+
+				{{#each committees}}
+				<h3 class="officer-heading" id="{{id}}">{{title}} Committee</h3>
+
+				<div class="row">
+					<div class="col s12 l11 offset-l1">
+						
+						<div class="row">
+							<div class="col s12 l4">
+								<div class="officer-card chair">
+									<div class="officer-content">
+										<object class="officer-img" type="image/svg+xml" data="{{chair.img}}">Your browser does not support SVGs</object>
+										<h4 class="bold">{{title}} Chair</h4>
+										<h4>{{chair.name}}</h4>
+										<h4>{{chair.major}}</h4>
+										<h4>{{chair.description}}</h4>
+										<a href="mailto:{{chair.email}}"><button>Contact: {{chair.email}}</button></a>
+									</div>
+								</div>
+							</div>
+						<!-- </div> -->
+
+						<div class="col s12 l8">
+							{{#each members}}
+							<div class="col s6 l4">
+								<div class="officer-card officer">
+									<div class="officer-content">
+										<object class="officer-img" type="image/svg+xml" data="{{img}}">Your browser does not support SVGs</object>
+										<h4 class="bold">{{title}}</h4>
+										<h4>{{name}}</h4>
+										<h4>{{major}}</h4>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					
+					</div>
+				</div>
+				{{/each}}
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<a href="/"><h4>Return to Site</h4></a>
+				<a href="#top"><h4>Back to Top</h4></a>
+			</div>
+		</div>
+
+
+	</body>
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+
+</html>
