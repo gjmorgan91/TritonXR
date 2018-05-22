@@ -10,7 +10,7 @@ var slideTimer;
 
 window.onload = function() {
 
-	if (slideCount != 0) {
+	// if (slideCount) {
 		slideTimer = setInterval(function() {
 			var i = slideIndex;
 			console.log("i is: "+i);
@@ -53,7 +53,7 @@ window.onload = function() {
 			console.log('1 slide: '+slides[1].className);
 			console.log('2 slide: '+slides[2].className);
 		},5000);
-	}
+	// }
 
 };
 

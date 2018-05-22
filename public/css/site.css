@@ -24,34 +24,33 @@ body {
 	margin: 0;
 	line-height: 1.8rem;
 	box-sizing: border-box;
+	color: rgba(10,10,15,1.0);
 }
 
 h1 {
 	font-family: 'Roboto';
 	font-weight: 100;
-	font-size: 40;
-	color: var(--black);
+	font-size: 40px;
 }
 
 h3 {
 	font-family: 'Open Sans';
 	font-weight: 600;
-	font-size: 20;
-	color: var(--black);
+	font-size: 20px;
 }
 
 h4, li, .navbar_logo {
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color: var(--black);
-	font-size: 14;
+	font-size: 14px;
 }
 
 p {
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color: var(--black);
-	font-size: 14;
+	font-size: 14px;
 }
 
 button {
@@ -59,7 +58,7 @@ button {
 	cursor: pointer;
 	transition: all 0.2s;
 	-webkit-transition: all 0.2s;
-	font-size: 12;
+	font-size: 12px;
 
 }
 
@@ -72,6 +71,11 @@ a {
 	text-decoration: none;
 	color: var(--black);
 	cursor: pointer;
+}
+
+p a {
+	color: black;
+	border-bottom: dotted 1px black;
 }
 
 .center {
@@ -203,10 +207,8 @@ a {
     position: relative;
     height: 100vh;
     width: 100%;
-    color: #fff;
     background-position: right bottom;
     background-color: darkgrey;
-    color: white;
     overflow: hidden;
 }
 
@@ -218,10 +220,11 @@ a {
 }
 
 .logo {
-	color: white;
 	text-align: center;
 	margin: auto;
 	display: inline;
+	position: relative;
+    top: 10rem;
 }
 
 .background_container {
@@ -434,9 +437,9 @@ a {
 
 .scrollspy-container {
 	position: absolute;
-	right: 5rem;
-	top: 28rem;
-	height: 430%;
+	right: 4rem;
+	top: 24rem;
+	height: 100%;
 }
 
 .scrollspy {
@@ -446,6 +449,7 @@ a {
 
 .scrollspy ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 .scrollspy li {
